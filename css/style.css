@@ -1,0 +1,449 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem;
+}
+.mobile-nav .hamburger-menu {
+  height: 8vh;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid green;
+  flex-direction: column;
+}
+.mobile-nav .hamburger-menu .line {
+  width: 70%;
+  height: 3px;
+  background-color: green;
+}
+
+.pc-nav {
+  display: none;
+}
+
+.banner {
+  background: #D5E0DD;
+  height: 103vh;
+}
+.banner .first-text {
+  font-size: 2rem;
+}
+.banner .paragraph {
+  margin-top: 30px;
+}
+.banner button {
+  padding: 10px 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: green;
+  margin-top: 15px;
+  color: white;
+}
+.banner .image img {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.services {
+  background: #D5E0DD;
+  height: 285vh;
+}
+.services h5 {
+  font-size: 3rem;
+}
+.services .card-container .card {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #D5E0DD;
+}
+.services .card-container .card h3 {
+  font-size: x-large;
+}
+.services .card-container .card a {
+  text-decoration: none;
+  color: green;
+}
+
+.mission {
+  height: 40vh;
+  background-color: #D5E0DD;
+}
+.mission .image {
+  width: 100%;
+  height: 40vh;
+  background: url("../images/img/vin4.png");
+  background-position: center;
+  background-size: cover;
+}
+.mission .image .overlay {
+  height: 40vh;
+  background: rgba(0, 0, 0, 0.704);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.mission .image .overlay h2 {
+  font-size: 2rem;
+}
+
+.features {
+  background: white;
+  height: 140vh;
+}
+.features .text-one {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.features .text-one h2 {
+  font-size: 2rem;
+}
+.features .card-one {
+  margin-top: 50px;
+  border: 2px solid gray;
+  background: #ECECEC;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2rem;
+}
+.features .card-one h2 {
+  font-size: 2rem;
+}
+.features .card-one ul {
+  list-style-type: decimal;
+  padding-left: 1rem;
+}
+.features .card-one ul p {
+  margin-left: -1rem;
+  margin-bottom: 2px;
+}
+
+body {
+  font-family: inter;
+}
+
+.questions {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+}
+.questions .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.questions .text h2 {
+  font-size: 2rem;
+}
+.questions .form {
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+.questions .form form {
+  margin-top: 50px;
+  background-color: #D5E0DD;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  width: 90%;
+}
+.questions .form form input::-moz-placeholder {
+  color: black;
+  font-weight: bolder;
+}
+.questions .form form input::placeholder {
+  color: black;
+  font-weight: bolder;
+}
+.questions .form form textarea::-moz-placeholder {
+  color: black;
+  font-weight: bolder;
+}
+.questions .form form textarea::placeholder {
+  color: black;
+  font-weight: bolder;
+}
+.questions .form form input[type=text],
+.questions .form form input[type=email],
+.questions .form form textarea, .questions .form form button {
+  border: 1px solid black;
+}
+.questions .form form button {
+  padding: 10px 0;
+}
+
+.footer {
+  background: #D5E0DD;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.footer .text {
+  font-size: 2rem;
+}
+.footer p {
+  text-align: center;
+}
+.footer #email {
+  padding: 10px;
+  width: 90%;
+}
+.footer button {
+  padding: 10px 40px;
+  background-color: #008F35;
+  border: none;
+  color: white;
+}
+
+.copyright {
+  background: #008F35;
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .pc-nav {
+    display: block;
+  }
+  .pc-nav .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pc-nav .flex-container ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: green;
+  }
+  .pc-nav .flex-container ul button {
+    padding: 10px 50px;
+    background-color: #008F35;
+    border: none;
+    color: white;
+    border-radius: 5px;
+  }
+  .banner {
+    height: 40vh;
+  }
+  .banner img {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+  }
+  .banner .first-text {
+    margin-top: 50px;
+  }
+  .services {
+    height: 60vh;
+  }
+  .services .card-container {
+    display: flex;
+    gap: 10px;
+  }
+  .mission .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mission .overlay p {
+    width: 43%;
+  }
+  .features {
+    height: 45vh;
+  }
+  .features .row {
+    display: flex;
+  }
+  .features .text-one {
+    text-align: left;
+  }
+  .features .card-one {
+    display: flex;
+    gap: 10px;
+  }
+  .questions {
+    height: 35vh;
+  }
+  .questions .text {
+    margin-top: 50px;
+  }
+  .questions .form {
+    width: 49%;
+  }
+  .footer {
+    height: 25vh;
+  }
+  .footer .text {
+    font-size: 3.5rem;
+  }
+  .footer #email {
+    width: 70%;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .banner {
+    height: 90vh;
+  }
+  .banner .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    height: 90vh;
+  }
+  .banner .text .first-text {
+    font-weight: bolder;
+    font-size: 2.5rem;
+    width: 80%;
+  }
+  .banner .text .paragraph {
+    width: 72%;
+  }
+  .banner .image {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+  }
+  .banner .image img {
+    width: 100%;
+    height: auto;
+  }
+  .services {
+    height: 110vh;
+  }
+  .mission {
+    height: 70vh;
+  }
+  .mission .image {
+    height: 70vh;
+  }
+  .mission .image .overlay {
+    height: 70vh;
+  }
+  .mission .image .overlay p {
+    width: 25%;
+    margin-top: 20px;
+  }
+  .features {
+    height: 70vh;
+    line-height: 20px;
+  }
+  .features .card-one {
+    line-height: 20px;
+    width: 40%;
+    margin-left: 30px;
+  }
+  .features .card-one .h2 {
+    margin-top: 20px;
+  }
+  .questions {
+    height: 60vh;
+  }
+  .footer {
+    height: 40vh;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
