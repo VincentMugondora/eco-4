@@ -47,11 +47,17 @@ table {
 	border-spacing: 0;
 }
 
+body{
+    font-family: inter;
+    background-color: #D5E0DD;
+}
+
 .mobile-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.4rem;
+    background-color: white;
 
     .hamburger-menu{
         height: 8vh;
@@ -76,7 +82,7 @@ table {
 
 .banner{
     background: #D5E0DD;
-    height: 103vh;
+    // height: 103vh;
 
     .first-text{
         font-size: 2rem;
@@ -106,7 +112,7 @@ table {
 
 .services{
     background: #D5E0DD;
-    height: 285vh;
+    margin-top: 50px;
 
     h5{
         font-size: 3rem;
@@ -136,6 +142,7 @@ table {
 .mission{
     height: 40vh;
     background-color: #D5E0DD;
+    margin-top: 50px;
 
     .image{
         width: 100%;
@@ -161,7 +168,7 @@ table {
 
 .features{
     background: white;
-    height: 140vh;
+    
 
     .text-one{
         margin-top: 50px;
@@ -208,12 +215,14 @@ body{
     background-color: white;
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 80vh;
+    
 
     .text{
         display: flex;
         flex-direction: column;
         gap: 20px;
+        margin-top: 50px;
 
         h2{
             font-size: 2rem;
@@ -270,7 +279,7 @@ body{
 
     #email{
         padding: 10px;
-        width: 90%;
+        width: 50vw;
     }
     button{
         padding: 10px 40px;
@@ -495,6 +504,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
     .footer{
         height: 40vh;
+
+        #email{
+            width: 45%;
+        }
     }
 }
 
