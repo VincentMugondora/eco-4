@@ -195,7 +195,7 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 90vh;
 }
 .questions .text {
   display: flex;
@@ -306,6 +306,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
   .pc-nav {
     display: block;
+    background-color: white;
   }
   .pc-nav .flex-container {
     display: flex;
@@ -425,7 +426,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     height: 70vh;
   }
   .mission .image .overlay p {
-    width: 25%;
+    width: 35%;
     margin-top: 20px;
   }
   .features {

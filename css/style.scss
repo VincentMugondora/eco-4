@@ -215,7 +215,7 @@ body{
     background-color: white;
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 90vh;
     
 
     .text{
@@ -331,6 +331,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
     .pc-nav{
         display: block;
+        background-color: white;
 
         .flex-container{
             display: flex;
@@ -477,7 +478,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
                 height: 70vh;
 
                 p{
-                    width: 25%;
+                    width: 35%;
                     margin-top: 20px;
                 }
             }
