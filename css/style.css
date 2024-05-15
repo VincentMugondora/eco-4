@@ -55,6 +55,49 @@ table {
 body {
   font-family: inter;
   background-color: #D5E0DD;
+  font-family: inter;
+}
+
+.sliding {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  transition: all 0.5s ease-in-out;
+  margin-top: -60vh;
+}
+.sliding .links {
+  height: 60vh;
+  width: 100vw;
+  background: rgb(57, 57, 57);
+  filter: blur(2px);
+  position: relative;
+}
+.sliding .fine {
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  margin-top: -60vh;
+}
+.sliding .fine li {
+  font-size: 2rem;
+}
+.sliding .fine button {
+  padding: 10px 50px;
+  background-color: #008F35;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.sliders {
+  display: block;
+  transform: translateY(60vh);
+  transition: all 1.5s ease-in-out;
 }
 
 .mobile-nav {
@@ -64,7 +107,12 @@ body {
   padding: 1.4rem;
   background-color: white;
 }
+.mobile-nav img {
+  height: 50px;
+}
 .mobile-nav .hamburger-menu {
+  z-index: 4;
+  border-radius: 5px;
   height: 8vh;
   width: 20%;
   display: flex;
@@ -129,19 +177,18 @@ body {
 }
 
 .mission {
-  height: 40vh;
   background-color: #D5E0DD;
   margin-top: 50px;
 }
 .mission .image {
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   background: url("../images/img/vin4.png");
   background-position: center;
   background-size: cover;
 }
 .mission .image .overlay {
-  height: 40vh;
+  height: 50vh;
   background: rgba(0, 0, 0, 0.704);
   color: white;
   display: flex;
@@ -195,7 +242,7 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  padding: 2rem 0px;
 }
 .questions .text {
   display: flex;
@@ -247,13 +294,13 @@ body {
 
 .footer {
   background: #D5E0DD;
-  height: 40vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
+  padding: 2rem 0px;
 }
 .footer .text {
   font-size: 2rem;
@@ -274,7 +321,7 @@ body {
 
 .copyright {
   background: #008F35;
-  height: 5vh;
+  padding: 1rem 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -327,7 +374,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     border-radius: 5px;
   }
   .banner {
-    height: 40vh;
+    padding: 2rem 0px;
   }
   .banner img {
     height: 100%;
@@ -366,7 +413,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     gap: 10px;
   }
   .questions {
-    height: 35vh;
+    padding: 3rem 0px;
   }
   .questions .text {
     margin-top: 50px;
@@ -386,14 +433,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .banner {
-    height: 90vh;
-  }
   .banner .text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
     height: 90vh;
   }
   .banner .text .first-text {
@@ -416,9 +460,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .services {
     height: 110vh;
   }
-  .mission {
-    height: 70vh;
-  }
   .mission .image {
     height: 70vh;
   }
@@ -430,7 +471,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     margin-top: 20px;
   }
   .features {
-    height: 70vh;
+    padding-bottom: 30rem;
     line-height: 20px;
   }
   .features .card-one {
@@ -442,7 +483,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     margin-top: 20px;
   }
   .questions {
-    height: 60vh;
+    padding: 3rem 0px;
   }
   .footer {
     height: 40vh;
