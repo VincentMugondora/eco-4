@@ -30,6 +30,11 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
 }
 ol, ul {
 	list-style: none;
@@ -59,25 +64,27 @@ body{
     right: 0;
     display: none;
     transition: all 0.5s ease-in-out;
-    margin-top: -60vh;
+    margin-right: -100vw;
 
     .links{
-        height: 60vh;
+        height: 100vh;
         width: 100vw;
         background: rgb(57, 57, 57);
         filter: blur(2px);
         position: relative;
+        transition: all 0.5s ease-in-out;
     }
     
     .fine{
-        height: 60vh;
+        height: 100vh;
         width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        transition: all 0.5s ease-in-out;
         position: absolute;
-        margin-top: -60vh;
+        top: 0;
 
         li{
             font-size: 2rem;
@@ -95,8 +102,9 @@ body{
 
 .sliders{
     display: block;
-    transform: translateY(60vh);
+    transform: translateX(-100vw);
     transition: all 1.5s ease-in-out;
+    position: fixed;
 }
 
 .mobile-nav{
@@ -105,12 +113,15 @@ body{
     align-items: center;
     padding: 1.4rem;
     background-color: white;
+    box-shadow: 0px 4px 5px;
 
     img{
         height: 50px;
     }
 
     .hamburger-menu{
+        position: fixed;
+        right: 1.4rem;
         z-index: 4;
         border-radius: 5px;
         height: 8vh;
